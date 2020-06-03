@@ -3,10 +3,11 @@ from prompt import string
 
 
 def guess_even():
-    number = randint(0, 100)
-    print(f'Question:{number}')
+    rnd_num = randint(0, 100)
+    print(f'Question:{rnd_num}')
     answer = string('Your answer: ')
-    if number % 2 == 0 and answer == 'yes' or number % 2 != 0 and answer == 'no':
+    if rnd_num % 2 == 0 and answer == 'yes' or \
+            rnd_num % 2 != 0 and answer == 'no':
         return True,
     else:
         correct_answer = 'yes'

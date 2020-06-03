@@ -8,12 +8,12 @@ transfer_math_operators = {'+': add, '-': sub, '*': mul}
 
 
 def calc_game_begin():
-    rand_number1 = randint(0, 100)
-    rand_number2 = randint(0, 100)
-    rand_operator = math_operators[randint(0, 2)]
-    print(f'Question:{rand_number1} {rand_operator} {rand_number2}')
+    rnd_num1 = randint(0, 100)
+    rnd_num2 = randint(0, 100)
+    rnd_oper = math_operators[randint(0, 2)]
+    print(f'Question:{rnd_num1} {rnd_oper} {rnd_num2}')
     answer = string('Your answer: ')
-    expression_answer = transfer_math_operators[rand_operator](rand_number1, rand_number2)
+    expression_answer = transfer_math_operators[rnd_oper](rnd_num1, rnd_num2)
     if str(expression_answer) == answer:
         return True,
     else:

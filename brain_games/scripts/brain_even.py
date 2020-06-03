@@ -1,7 +1,7 @@
-from brain_games.scripts.brain_games1 import welcome_user
+from brain_games.scripts.brain_games import welcome_user
 from brain_games.game_body import game_begining
-from brain_games.scripts.brain_games1 import greeting
-from brain_games.games.evgame import guess_even
+from brain_games.scripts.brain_games import greeting
+from brain_games.games.ev_game import guess_even
 
 
 def special_greeting():
