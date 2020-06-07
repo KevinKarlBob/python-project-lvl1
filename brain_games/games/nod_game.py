@@ -1,18 +1,16 @@
 from random import randint
+
 from prompt import string
 
 
 def nod_game_begin():
-    rnd_num1 = randint(0, 100)
-    rnd_num2 = randint(0, 100)
-    print(f'Question:{rnd_num1} {rnd_num2}')
+    first_number = randint(0, 100)
+    second_number = randint(0, 100)
+    print(f'Question:{first_number} {second_number}')
     answer = string('Your answer: ')
-    while rnd_num1 != rnd_num2:
-        if rnd_num1 > rnd_num2:
-            rnd_num1 = rnd_num1 - rnd_num2
+    while first_number != second_number:
+        if first_number > second_number:
+            first_number = first_number - second_number
         else:
-            rnd_num2 = rnd_num2 - rnd_num1
-    if rnd_num1 == answer:
-        return True,
-    else:
-        return False, answer, rnd_num1
+            second_number = second_number - first_number
+    return answer, first_number

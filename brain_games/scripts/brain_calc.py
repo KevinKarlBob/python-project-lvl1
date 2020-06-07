@@ -1,16 +1,11 @@
 from brain_games.cli import welcome_user
+from brain_games.game_body import game_beginning
 from brain_games.games.calc_game import calc_game_begin
 from brain_games.scripts.brain_games import greeting
-from brain_games.game_body import game_begining
-
-
-def special_greeting():
-    greeting()
-    print('What is the result of the expression?')
 
 
 def main():
-    special_greeting()
+    greeting('What is the result of the expression?')
     name = welcome_user()
     game_beginning(calc_game_begin, name)
 

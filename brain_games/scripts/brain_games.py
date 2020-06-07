@@ -1,8 +1,10 @@
 from brain_games.cli import welcome_user
 
 
-def greeting():
+def greeting(special_greeting=None):
     print('Welcome to the Brain Games!')
+    if special_greeting:
+        print(special_greeting)
 
 
 def main():

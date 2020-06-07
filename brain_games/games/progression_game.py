@@ -13,7 +13,4 @@ def progression_game_begin():
     progression[position_in_progression_hide] = '.'
     print(f'Question:{progression}')
     answer = string('Your answer: ')
-    if str(correct_answer) == answer:
-        return True,
-    else:
-        return False, answer, correct_answer
+    return answer, correct_answer

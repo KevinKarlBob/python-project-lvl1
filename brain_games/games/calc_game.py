@@ -1,20 +1,16 @@
 from operator import add, sub, mul
 from random import randint
-from prompt import string
 
-math_operators = ['+', '-', '*']
+from prompt import string
 
 transfer_math_operators = {'+': add, '-': sub, '*': mul}
 
 
 def calc_game_begin():
-    rnd_num1 = randint(0, 100)
-    rnd_num2 = randint(0, 100)
-    rnd_oper = math_operators[randint(0, 2)]
-    print(f'Question:{rnd_num1} {rnd_oper} {rnd_num2}')
+    first_number = randint(0, 100)
+    second_number = randint(0, 100)
+    operation = list(transfer_math_operators)[randint(0, 2)]
+    print(f'Question:{first_number} {operation} {second_number}')
     answer = string('Your answer: ')
-    expression_answer = transfer_math_operators[rnd_oper](rnd_num1, rnd_num2)
-    if str(expression_answer) == answer:
-        return True,
-    else:
-        return False, answer, expression_answer
+    expected_result = transfer_math_operators[operation](first_number, second_number)
+    return answer, expected_result
