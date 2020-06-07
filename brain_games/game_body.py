@@ -1,4 +1,4 @@
-def game_begining(game, name):
+def game_beginning(game, name):
     counter = 0
     while counter < 3:
         counter += 1

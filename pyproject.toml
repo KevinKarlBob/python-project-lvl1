@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "KevinKarlBob_brain_games"
-version = "0.8.4"
+version = "0.9.1"
 description = ""
 authors = ["PejRazbeg"]
 packages = [

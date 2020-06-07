@@ -12,7 +12,7 @@ def special_greeting():
 def main():
     special_greeting()
     name = welcome_user()
-    game_begining(is_prime, name)
+    game_beginning(is_prime, name)
 
 
 if __name__ == '__main__':
