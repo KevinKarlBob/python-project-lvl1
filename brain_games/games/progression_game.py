@@ -8,7 +8,8 @@ def progression_game_begin():
     progression_step = randint(1, 10)
     position_to_hide = randint(0, 9)
     limit = progression_step * 10 + number_for_progression
-    progression = [number for number in range(number_for_progression, limit, progression_step)]
+    progression = [number for number in
+                   range(number_for_progression, limit, progression_step)]
     correct_answer = progression[position_to_hide]
     progression[position_to_hide] = '.'
     print(f'Question:{progression}')
