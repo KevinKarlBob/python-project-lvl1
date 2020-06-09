@@ -1,6 +1,6 @@
 from random import randint
 
-from prompt import string
+from prompt import integer
 
 
 def progression_game_begin():
@@ -13,5 +13,5 @@ def progression_game_begin():
     correct_answer = progression[position_to_hide]
     progression[position_to_hide] = '.'
     print(f'Question:{progression}')
-    answer = string('Your answer: ')
+    answer = integer('Your answer: ')
     return answer, correct_answer

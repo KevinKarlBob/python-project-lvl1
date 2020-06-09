@@ -2,14 +2,14 @@
 name = "KevinKarlBob_brain_games"
 version = "1.0.0"
 description = "console brain games"
-licanse = "MIT"
 classifiers = [
     "Development Status :: 5 - Production/Stable",
     "Environment :: Console",
+    "Programming Language :: Python :: 3.7",
               ]
 readme = "README.md"
 repository = "https://github.com/KevinKarlBob/python-project-lvl1"
-authors = ["PejRazbeg"]
+authors = ["hleb <hleb_smaple_mail@gmail.com>"]
 packages = [
   { include = "brain_games" },
 ]
