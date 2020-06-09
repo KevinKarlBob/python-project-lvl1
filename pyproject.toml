@@ -1,7 +1,14 @@
 [tool.poetry]
 name = "KevinKarlBob_brain_games"
 version = "1.0.0"
-description = ""
+description = "console brain games"
+licanse = "MIT"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+              ]
+readme = "README.md"
+repository = "https://github.com/KevinKarlBob/python-project-lvl1"
 authors = ["PejRazbeg"]
 packages = [
   { include = "brain_games" },
