@@ -1,7 +1,5 @@
 from random import randint
 
-from prompt import integer
-
 
 def progression_game_begin():
     number_for_progression = randint(0, 100)
@@ -12,6 +10,4 @@ def progression_game_begin():
                    range(number_for_progression, limit, progression_step)]
     correct_answer = progression[position_to_hide]
     progression[position_to_hide] = '.'
-    print(f'Question:{progression}')
-    answer = integer('Your answer: ')
-    return answer, correct_answer
+    return progression, correct_answer
