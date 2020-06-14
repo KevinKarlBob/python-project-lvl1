@@ -1,11 +1,11 @@
 from prompt import string
-from brain_games.game_factory import game_dictionary
+from brain_games.constants import phrase_dictionary
 
 
 def greeting(game_indicator=None):
     print('Welcome to the Brain Games!')
     if game_indicator:
-        print(game_dictionary[game_indicator][0])
+        print(phrase_dictionary[game_indicator])
     return welcome_user()
 
 

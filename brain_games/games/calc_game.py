@@ -1,8 +1,5 @@
-from operator import add, sub, mul
 from random import randint
-
-
-transfer_math_operators = {'+': add, '-': sub, '*': mul}
+from brain_games.constants import transfer_math_operators
 
 
 def calc_game_begin():

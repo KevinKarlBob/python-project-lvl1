@@ -1,7 +1,7 @@
 from brain_games.game_body import game_beginning
 
 
-game_indicator = 'prime_game'
+game_indicator = 'prm_game'
 
 
 def main():
