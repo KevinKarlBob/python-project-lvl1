@@ -1,11 +1,13 @@
 from brain_games.cli import greeting, get_answer, ask_question
 from brain_games.game_factory import choose_game
 
+ROUNDS_COUNT = 3
+
 
 def game_beginning(game_indicator):
     name = greeting(game_indicator)
-    rounds_number = 3
-    for i in range(rounds_number):
+
+    for i in range(ROUNDS_COUNT):
         data, correct_answer = choose_game(game_indicator)
         ask_question(data, game_indicator)
         answer = get_answer()

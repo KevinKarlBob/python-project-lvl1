@@ -1,11 +1,18 @@
 from prompt import string
-from brain_games.constants import phrase_dictionary
+
+PHRASE_DICTIONARY = {
+    "calc_game": "What is the result of the expression?",
+    'even_game': 'Answer "yes" if number even otherwise answer "no"',
+    'gcd_game': 'Find the greatest common divisor of given numbers.',
+    'prm_game': 'Answer "yes" if given number is prime. Otherwise answer "no"',
+    'progression_game': 'What number is missing in the progression?'
+}
 
 
 def greeting(game_indicator=None):
     print('Welcome to the Brain Games!')
     if game_indicator:
-        print(phrase_dictionary[game_indicator])
+        print(PHRASE_DICTIONARY[game_indicator])
     return welcome_user()
 
 
@@ -25,5 +32,4 @@ def ask_question(data, game_indicator):
 
 
 def get_answer():
-    answer = string("Your answer: ")
-    return answer
+    return string("Your answer: ")

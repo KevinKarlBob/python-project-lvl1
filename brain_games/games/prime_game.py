@@ -2,12 +2,13 @@ import math
 from random import randint
 
 
-def is_prime():
+def prime_game_begin():
     number = randint(0, 100)
-    return number, 'yes' if check_prime(number) else 'no'
+    expected_answer = 'yes' if is_prime(number) else 'no'
+    return number, expected_answer
 
 
-def check_prime(number):
+def is_prime(number):
     if number % 2 == 0:
         return False
     upper_border_divisor = int(math.sqrt(number))
