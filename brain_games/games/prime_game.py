@@ -3,9 +3,10 @@ from random import randint
 
 
 def prime_game_begin():
+    phrase = 'Answer "yes" if given number is prime. Otherwise answer "no"'
     number = randint(0, 100)
     expected_answer = 'yes' if is_prime(number) else 'no'
-    return number, expected_answer
+    return number, expected_answer, phrase
 
 
 def is_prime(number):

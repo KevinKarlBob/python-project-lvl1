@@ -1,11 +1,9 @@
 from brain_games.game_body import game_beginning
-
-
-game_indicator = 'prm_game'
+from brain_games.games.prime_game import prime_game_begin
 
 
 def main():
-    game_beginning(game_indicator)
+    game_beginning(prime_game_begin)
 
 
 if __name__ == '__main__':

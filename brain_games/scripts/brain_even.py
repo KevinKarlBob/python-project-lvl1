@@ -1,10 +1,9 @@
 from brain_games.game_body import game_beginning
-
-game_indicator = 'even_game'
+from brain_games.games.ev_game import guess_even
 
 
 def main():
-    game_beginning(game_indicator)
+    game_beginning(guess_even)
 
 
 if __name__ == '__main__':
